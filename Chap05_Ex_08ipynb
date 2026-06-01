@@ -1,0 +1,80 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPtNUszEtK1AE20fPOUPWc/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/UltraGigaHero/EU_M_Math/blob/main/Chap05_Ex_08ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "import numpy.random as random\n",
+        "import scipy as sp\n",
+        "\n",
+        "sample_array1 = np.arange(12).reshape(3,4)\n",
+        "sample_array2 = np.arange(12).reshape(3,4)\n",
+        "\n",
+        "print(sample_array1)\n",
+        "print(sample_array2)\n",
+        "\n",
+        "np.concatenate([sample_array1,sample_array2],axis=1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z7hOLamIZCVQ",
+        "outputId": "0c9b9f29-9ceb-4fa6-c937-2a86aeddbc69"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[ 0  1  2  3]\n",
+            " [ 4  5  6  7]\n",
+            " [ 8  9 10 11]]\n",
+            "[[ 0  1  2  3]\n",
+            " [ 4  5  6  7]\n",
+            " [ 8  9 10 11]]\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[ 0,  1,  2,  3,  0,  1,  2,  3],\n",
+              "       [ 4,  5,  6,  7,  4,  5,  6,  7],\n",
+              "       [ 8,  9, 10, 11,  8,  9, 10, 11]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    }
+  ]
+}
